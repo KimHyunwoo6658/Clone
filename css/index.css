@@ -121,6 +121,7 @@ main {
 }
 
 .text-box {
+    position: relative;
     margin-top: 100px;
     text-align: center;
     background-color: #fff;
@@ -128,6 +129,7 @@ main {
 
 .text-box > p {
     font-size: 30px;
+    font-weight: bold;
 }
 
 .orange {
@@ -151,6 +153,21 @@ main {
 
 .main-start-img .pc {
     display: none;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.box > p {
+    color: white;
+    text-align: center;
+    padding: 7px;
 }
 
 @media (max-width: 1440px) {
@@ -185,10 +202,23 @@ main {
     .text-box {
         margin-top: 70px;
         position: absolute;
-        top: 20px; left: 100px;
+        top: 25%; left: 100px;
+        transform: translate(0%, -100%);
         text-align: left;
     }
 
+    .text-box > p {
+        font-size: 3vw;
+    }
+
+    .text-box > .small-text {
+        font-size: 1.5vw;
+    }
+    .box {
+        position: absolute;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
 }
 
 @media (min-width:1024px) {
@@ -201,8 +231,12 @@ main {
 
     .text-box {
         position: absolute;
-        top: 50px; left: 250px;
+        top: 150px; left: 250px;
         text-align: left;
+    }
+
+    .text-box > p {
+        font-size: 35px;
     }
 }
 
@@ -274,7 +308,7 @@ main {
         margin-bottom: 20px;
     }
 
-@media (min-width:1024px) {
+@media (min-width:768px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2개의 열을 가진 그리드 템플릿 */
@@ -285,6 +319,15 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; /* 3개의 열을 가진 그리드 템플릿 */
         gap: 20px; /* 그리드 간격 설정 */
+    }
+
+    .item-txt1 h2,
+    .item-txt2 h2 {
+        font-size: 3vw;
+    }
+    .item-txt1 p,
+    .item-txt2 p {
+        font-size: 1.5vw;
     }
 }
 
