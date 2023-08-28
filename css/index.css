@@ -352,5 +352,18 @@ main {
     box-sizing: border-box;
 }
 
+.grid-item4 {
+    position: relative;
+}
+.item-txt4 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* 조절 가능 */
+    box-sizing: border-box;
+}
+
 
 /* ========== footer ========== */
