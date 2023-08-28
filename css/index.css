@@ -259,7 +259,7 @@ main {
     .grid-item1,
     .grid-item2 {
         width: 100%;
-        margin: 20px 0;
+        margin: 10px 0;
         
     }
 
@@ -268,7 +268,8 @@ main {
         width: 100%;
     }
 
-    .grid-item1, .grid-item2 {
+    .grid-item1,
+    .grid-item2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -312,13 +313,13 @@ main {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr; /* 2개의 열을 가진 그리드 템플릿 */
-        gap: 20px; /* 그리드 간격 설정 */
+        gap: 10px; /* 그리드 간격 설정 */
     }
     
     .grid-row {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; /* 3개의 열을 가진 그리드 템플릿 */
-        gap: 20px; /* 그리드 간격 설정 */
+        gap: 10px; /* 그리드 간격 설정 */
     }
 
     .item-txt1 h2,
@@ -329,8 +330,27 @@ main {
     .item-txt2 p {
         font-size: 1.5vw;
     }
+
 }
 
+.grid-item4,
+.grid-item5 {
+    margin: 10px;
+}
+
+
+.grid-item3 {
+    position: relative;
+}
+.item-txt3 {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* 조절 가능 */
+    box-sizing: border-box;
+}
 
 
 /* ========== footer ========== */
