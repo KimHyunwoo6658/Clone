@@ -409,7 +409,6 @@ main {
 
     .grid-item4,
     .grid-item5 {
-        height: ;
         margin-top: 0;
         margin-left: 0;
     }
@@ -423,6 +422,5 @@ footer {
 
 .footer-container {
     width: 100%; height: 300px;
-    background-color:
     padding: 50px 20px 30px 20px;
 }
