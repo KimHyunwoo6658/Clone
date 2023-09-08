@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-family: 'SB 어그로';
+}
+
+p {
+    line-height: 1.4;
+    font: 14px 'SB 어그로';
+    color: black;
+}
+
+img,
+input,
+textarea,
+button,
+select {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+h2 {
+    font-size: 23px;
+    color: black;
+}
+
+h3 {
+    font-family: 'SB 어그로';
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+}
+
+h4 {
+    display: none;
+    font-size: 18px;
+    color: black;
+}
+
+address {
+    font-style: normal;
+}
+
+strong {
+    display: block;
+}
+
+header,
+main,
+aside,
+footer,
+article,
+nav,
+section {
+    display: block;
+}

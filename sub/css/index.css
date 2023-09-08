@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/* ========== header ========== */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    z-index: 1000; /* 다른 요소 위에 표시하기 위한 z-index 설정 */
+    background-color: #fff;
+}
+
+.header-box {
+    width: 1440px; height: 80px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    padding: 0 20px;
+    /* background-color: aqua; */
+}
+
+/* 헤더박스 사이즈 */
+@media (max-width: 1440px) {
+    .header-box {
+        width: 100%;
+    }
+}
+
+.header-box h1 img {
+    width: 35px; /* 원하는 너비로 조절 */
+    height: auto; /* 높이는 자동으로 조절되도록 설정 */
+    margin: 20px 20px;
+}
+
+.gnb {
+    display: none;
+}
+
+.right-menu {
+    display: none;
+}
+
+.mobile-btn {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* 우측 정렬 */
+    width: 30px;
+    height: 80px; /* 헤더 박스 높이와 동일하게 설정 */
+    cursor: pointer;
+}
+
+.mobile-btn span {
+    width: 60%;
+    height: 2px;
+    background-color: #333; /* 선의 색상 */
+}
+
+.mobile-btn span:nth-child(2) {
+    margin: 5px 0;
+}
+
+
+
+/* 테블릿 */
+@media (min-width: 768px) {
+    .gnb {
+        display: flex;
+    }
+
+    .gnb a {
+        font-size: 1.6vw;
+    }
+
+    .gnb > li {
+        line-height: 80px;
+        margin: 0 20px;
+    }
+
+    .right-menu {
+        position: absolute;
+        right: 0; top: 0;
+        display: flex;
+        line-height: 80px;
+    }
+
+    .right-menu > a {
+        margin: 0 20px;
+        font-size: 1.6vw;
+    }
+
+    .right-menu img {
+        width: 40px;
+        height: auto;
+    }
+
+    .mobile-btn {
+        display: none;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .gnb a {
+        font-size: 16px;
+    }
+
+    .right-menu a {
+        font-size: 16px;
+    }
+}
+
+/* ===== main ===== */
+
+/* ===== footer ===== */
+
+footer {
+    background-color: #1a1a1a;
+    padding-bottom: 50px;
+}
+
+footer p,
+footer a,
+footer span {
+    color: white;
+}
+
+.footer-container {
+    padding: 70px 20px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-support,
+.footer-company {
+    display: none;
+}
+
+.footer-email > form > input {
+    display: block;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%; height: 20px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.sub-container {
+    width: 100%;
+}
+
+.footer-email p {
+    margin-bottom: 10px;
+}
+
+.site-map {
+    padding: 30px 20px 30px 20px;
+}
+
+.site-map a {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.site-map > hr {
+    margin-bottom: 20px;
+}
+
+.last-txt {
+    font-size: 12px;
+    color: #aaa;
+}
+
+    footer hr,
+    footer span {
+        margin: 10px 20px;
+    }
+
+
+@media (min-width:768px) {
+    
+
+    .footer-container {
+        display: block;
+        /* margin-bottom: 10px; */
+    }
+
+    .sub-container {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #fff ;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-online {
+        width: 50%;
+    }
+
+
+    .site-map a:first-child {
+        float: left;
+        margin: 10px 0;
+    }
+
+    .site-map a:nth-child(2) {
+        float: right;
+        margin: 10px 0;
+    }
+
+    .footer-support,
+    .footer-company {
+        display: block;
+        width: 50%;
+        /* margin-bottom: 20px; */
+    }
+
+    .footer-support a,
+    .footer-company a {
+        margin: 10px 0;
+        color: #aaa;
+        font-weight: normal;
+    }
+
+    .tablet-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+    .footer-container {
+        width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+    }
+
+    .sub-container {
+        display: block;
+        border-bottom: none;
+        position: absolute;
+        top: 70px; right: 20px;
+        width: 30%;
+    }
+
+    .last-con {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .tablet-container {
+        border: none;
+        position: absolute;
+        top: 70px; left: 20px;
+    }
+
+    .footer-support {
+        width: 100%;
+        margin-right: 200px;
+    }
+
+    .footer-company {
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .site-map {
+        margin-top: 100px;
+    }
+}

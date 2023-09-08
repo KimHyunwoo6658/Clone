@@ -395,6 +395,10 @@ main {
     margin-bottom: 20px;
 }
 
+footer a {
+    font-size: 12px;
+}
+
 @media (min-width:768px) {
     .grid-item3 {
         margin-left: 10px;
@@ -418,6 +422,7 @@ main {
 
 footer {
     background-color: #1a1a1a;
+    padding-bottom: 50px;
 }
 
 footer p,
@@ -427,8 +432,7 @@ footer span {
 }
 
 .footer-container {
-    width: 100%;
-    padding: 30px 20px 30px 20px;
+    padding: 70px 20px 30px 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -474,28 +478,120 @@ footer span {
     color: #aaa;
 }
 
+    footer hr,
+    footer span {
+        margin: 10px 20px;
+    }
+
+
 @media (min-width:768px) {
+    
+
     .footer-container {
         display: block;
+        /* margin-bottom: 10px; */
     }
 
     .sub-container {
         width: 100%;
         display: flex;
         border-bottom: 1px solid #fff ;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     .footer-online {
         width: 50%;
     }
 
-    .site-map hr {
-        display: none;
+
+    .site-map a:first-child {
+        float: left;
+        margin: 10px 0;
+    }
+
+    .site-map a:nth-child(2) {
+        float: right;
+        margin: 10px 0;
     }
 
     .footer-support,
     .footer-company {
         display: block;
+        width: 50%;
+        /* margin-bottom: 20px; */
     }
 
+    .footer-support a,
+    .footer-company a {
+        margin: 10px 0;
+        color: #aaa;
+        font-weight: normal;
+    }
+
+    .tablet-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+    .footer-container {
+        width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+    }
+
+    .sub-container {
+        display: block;
+        border-bottom: none;
+        position: absolute;
+        top: 70px; right: 20px;
+        width: 30%;
+    }
+
+    .last-con {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .tablet-container {
+        border: none;
+        position: absolute;
+        top: 70px; left: 20px;
+    }
+
+    .footer-support {
+        width: 100%;
+        margin-right: 200px;
+    }
+
+    .footer-company {
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .site-map {
+        margin-top: 100px;
+    }
+}
+
+.text-box > p:hover {
+    text-decoration: underline;
+}
+
+.text-box > .box:hover {
+    cursor: pointer;
+}
+
+.grid-container .orange:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
