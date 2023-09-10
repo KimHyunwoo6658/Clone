@@ -115,6 +115,68 @@
 }
 
 /* ===== main ===== */
+.top-box {
+    padding-top: 160px;
+    padding-bottom: 100px;
+    background-color: #eee;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-box h2 {
+    margin-bottom: 20px;
+}
+
+
+.flex-item {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.flex-item h2 {
+    margin-bottom: 10px;
+}
+
+.flex-item a {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.flex-item a:hover {
+    color: orange;
+}
+
+@media (min-width:768px) {
+    .flex-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .flex-item {
+        width: 25%;
+    }
+}
+
+@media (min-width:1440px) {
+    .flex-container {
+        display: flex;
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .flex-item {
+        width: 25%;
+    }
+
+    .global-item {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .global-item h2 {
+        margin-bottom: 10px;
+    }
+}
 
 /* ===== footer ===== */
 
